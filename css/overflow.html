@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        border: 2px solid red;
+        float: left;
+        margin: 15px;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, cum
+      modi eum itaque eveniet eius nihil quaerat minima id nostrum culpa, quod,
+      eligendi quae! Quam animi magni sapiente ad doloribus.
+    </div>
+    <div class="hidden">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, cum
+      modi eum itaque eveniet eius nihil quaerat minima id nostrum culpa, quod,
+      eligendi quae! Quam animi magni sapiente ad doloribus.
+    </div>
+    <div class="scroll">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, cum
+      modi eum itaque eveniet eius nihil quaerat minima id nostrum culpa, quod,
+      eligendi quae! Quam animi magni sapiente ad doloribus.
+    </div>
+    <div class="hidden">
+      <img src="a.png" alt="" />
+    </div>
+    <div class="scroll">
+      <img src="a.png" alt="" />
+    </div>
+  </body>
+</html>
