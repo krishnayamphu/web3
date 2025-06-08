@@ -1,0 +1,37 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: orangered;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 15px;
+}
+nav ul ul {
+  background-color: pink;
+  position: absolute;
+  display: none;
+}
+nav ul ul li {
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: orange;
+}
+nav ul li:hover ul {
+  display: block;
+}
