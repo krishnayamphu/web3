@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      section {
+        border: 1px solid red;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        perspective: 500px;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: all 1s;
+        margin: 15px;
+      }
+      div:hover {
+        background-color: teal;
+      }
+      .box1:hover {
+        transform: scaleX(2);
+      }
+      .box2:hover {
+        transform: scaleY(2);
+      }
+      .box3:hover {
+        transform: scaleZ(2);
+      }
+      .box4:hover {
+        transform: scale3d(2, 2, 2);
+      }
+
+      .box5:hover {
+        transform: translateX(50px);
+      }
+      .box6:hover {
+        transform: translateY(50px);
+      }
+      .box7:hover {
+        transform: translateZ(-50px);
+      }
+      .box8:hover {
+        transform: translate3d(50px, 50px, -50px);
+      }
+
+      .box9:hover {
+        transform: rotateX(180deg);
+      }
+      .box10:hover {
+        transform: rotateY(360deg);
+      }
+      .box11:hover {
+        transform: rotateZ(360deg);
+      }
+      .box12:hover {
+        transform: rotate3d(0, 1, 1, 45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1">scaleX</div>
+      <div class="box2">scaleY</div>
+      <div class="box3">scaleZ</div>
+      <div class="box4">scale3d</div>
+    </section>
+
+    <section>
+      <div class="box5">translateX</div>
+      <div class="box6">translateY</div>
+      <div class="box7">translateZ</div>
+      <div class="box8">translate3d</div>
+    </section>
+
+    <section>
+      <div class="box9">rotateX</div>
+      <div class="box10">rotateY</div>
+      <div class="box11">rotateZ</div>
+      <div class="box12">rotate3d</div>
+    </section>
+  </body>
+</html>

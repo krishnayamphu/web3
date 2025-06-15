@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: all 1s;
+        margin: 15px auto;
+      }
+
+      .box1:hover {
+        transform: scale(2, 2);
+      }
+      .box2:hover {
+        transform: translate(50px, 50px);
+      }
+      .box3:hover {
+        transform: rotate(360deg);
+      }
+      .box4:hover {
+        transform: skew(20deg, 0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">scale</div>
+    <div class="box2">translate</div>
+    <div class="box3">rotate</div>
+    <div class="box4">skew</div>
+  </body>
+</html>
