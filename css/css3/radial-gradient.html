@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        margin: 15px;
+        border: 1px solid red;
+        float: left;
+      }
+
+      .box1 {
+        background-image: radial-gradient(red, blue);
+      }
+      .box2 {
+        background-image: radial-gradient(circle, red, blue);
+      }
+      .box3 {
+        background-image: radial-gradient(at 0% 0%, red, blue);
+      }
+      .box4 {
+        background-image: radial-gradient(farthest-side, red, blue);
+      }
+      .box5 {
+        background-image: radial-gradient(
+          circle farthest-side at 50% 10%,
+          red,
+          blue,
+          yellow
+        );
+      }
+      .box6 {
+        background-image: radial-gradient(
+          circle,
+          red 33%,
+          blue 33%,
+          blue 66%,
+          yellow 66%
+        );
+      }
+
+      .box7 {
+        background-image: radial-gradient(
+          rgb(253, 19, 19),
+          rgba(0, 0, 255, 0.452)
+        );
+      }
+
+      .box8 {
+        background-image: repeating-radial-gradient(
+          circle,
+          red,
+          blue,
+          yellow 10%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+  </body>
+</html>
