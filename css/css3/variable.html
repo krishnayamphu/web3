@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      :root {
+        --primary-color: #0a405f;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        padding: 15px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      main {
+        width: 90%;
+        margin: 15px auto;
+      }
+      main h1 {
+        color: var(--primary-color);
+      }
+
+      .bg-primary {
+        background-color: var(--primary-color, rgb(54, 54, 235));
+      }
+      .text-white {
+        padding: 15px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Brand Name</header>
+
+    <main>
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, provident
+        ad iste consequuntur dolores commodi, sapiente atque impedit itaque
+        reprehenderit est. Aperiam commodi consequuntur aliquam nemo, cum soluta
+        tempore itaque!
+      </p>
+      <p class="bg-primary text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+        impedit voluptate rem in culpa consequuntur blanditiis? Ab doloribus
+        hic, reiciendis quo aperiam exercitationem quis consequatur quia vel
+        quaerat corporis esse?
+      </p>
+    </main>
+  </body>
+</html>
