@@ -1,3 +1,6 @@
+:root {
+  --accent-color: #001e2b;
+}
 .top-header {
   font-size: 14px;
 }
@@ -6,4 +9,41 @@
 }
 .top-header a {
   font-size: 14px;
+}
+
+.feartured-categories .card {
+  transition: all 0.3s ease-in-out;
+}
+.feartured-categories .card:hover {
+  border: 1px solid #0aad0a;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.feartured-categories .card-body {
+  font-size: 12px;
+}
+
+.grocery-banner .banner-1 {
+  background-image: url(../images/grocery-banner.png);
+  background-size: cover;
+}
+.grocery-banner h2 {
+  color: var(--accent-color);
+}
+
+.btn-action {
+  background-color: var(--accent-color);
+  color: white;
+}
+.btn-action:hover {
+  background-color: #03364d;
+  color: white;
+}
+
+.popular-products .ratings i {
+  color: #ffc107;
+}
+
+.popular-products a {
+  color: var(--accent-color);
 }
