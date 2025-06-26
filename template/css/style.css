@@ -1,5 +1,6 @@
 :root {
   --accent-color: #001e2b;
+  --success-color: #0aad0a;
 }
 .top-header {
   font-size: 14px;
@@ -10,12 +11,11 @@
 .top-header a {
   font-size: 14px;
 }
-
-.feartured-categories .card {
+.card {
   transition: all 0.3s ease-in-out;
 }
 .feartured-categories .card:hover {
-  border: 1px solid #0aad0a;
+  border: 1px solid var(--success-color);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
@@ -46,4 +46,24 @@
 
 .popular-products a {
   color: var(--accent-color);
+}
+
+.popular-products .card:hover {
+  border: 1px solid var(--success-color);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+.popular-products .card:hover .product-overlay {
+  display: flex !important;
+}
+.popular-products .card .product-overlay a {
+  transition: all 0.3s ease-in-out;
+}
+.popular-products .card .product-overlay a:hover {
+  background-color: var(--success-color) !important;
+  color: white;
+}
+
+.daily-best-sells .banner-deal {
+  background-image: url(../images/banner-deal.jpg);
+  background-size: cover;
 }
