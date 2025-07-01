@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <input type="text" id="txtbox" oninput="changeCase()" />
+    <span id="count"></span>
+    <hr />
+
+    <input
+      type="range"
+      min="0"
+      max="100"
+      id="myRange"
+      oninput="getRangeValue()"
+    />
+    <span id="rangeValue"></span>
+    <script>
+      function changeCase() {
+        let text = document.getElementById("txtbox").value;
+        document.getElementById("txtbox").value = text.toUpperCase();
+        document.getElementById("count").innerHTML = text.length;
+      }
+
+      function getRangeValue() {
+        let value = document.getElementById("myRange").value;
+        document.getElementById("rangeValue").innerHTML = value;
+      }
+    </script>
+  </body>
+</html>
