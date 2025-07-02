@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <input type="text" id="clock" />
+    <script>
+      function myClock() {
+        const time = new Date();
+        let h = time.getHours();
+        if (h > 12) h = h - 12;
+        let mi = time.getMinutes();
+        let s = time.getSeconds();
+        let ms = time.getMilliseconds();
+
+        let timeData = h + ":" + mi + ":" + s + ":" + ms;
+        document.getElementById("clock").value = timeData;
+      }
+
+      setInterval(myClock, 1);
+    </script>
+  </body>
+</html>
