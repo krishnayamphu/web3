@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Get Content</button>
+    <button id="btn2">Set Content</button>
+    <section>Welcome to <strong>jQuery</strong>.</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          alert($("section").html());
+        });
+
+        $("#btn2").click(function () {
+          $("section").html("Hello <em><strong>World</strong></em>");
+        });
+      });
+    </script>
+  </body>
+</html>

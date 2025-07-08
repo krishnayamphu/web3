@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-form {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 2px;
+      }
+      .login-form input {
+        display: block;
+        padding: 3px 6px;
+      }
+      .login-form button {
+        background-color: rgb(5, 74, 43);
+        border: 1px solid rgb(5, 74, 43);
+        padding: 3px;
+        border-radius: 2px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        transition: all 0.3s;
+      }
+      .login-form button:hover {
+        background-color: rgb(5, 57, 33);
+      }
+      .text-danger {
+        color: red;
+      }
+      .text-success {
+        color: rgb(5, 57, 33);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-form">
+      <div>
+        <div id="successMsg" class="text-success"></div>
+        <div id="errMsg" class="text-danger"></div>
+      </div>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="btnLogin">Login</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btnLogin").click(function () {
+          let username = $("#username").val();
+          let password = $("#password").val();
+          if (username == "") {
+            $("#errMsg").text("Username is required");
+            console.log("Username is required");
+          } else if (password == "") {
+            $("#errMsg").text("Password is required");
+          } else if (username == "admin" && password == "a123") {
+            $("#successMsg").text("Login success");
+            $("#errMsg").text("");
+          } else {
+            $("#errMsg").text("Username or Password is incorrect");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
