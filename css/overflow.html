@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      div {
+        width: 200px;
+        height: 150px;
+        border: 2px solid red;
+        margin: 5px;
+        float: left;
+        padding: 15px;
+        line-height: 1.5;
+        font-size: 15.5px;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+
+      .scroll {
+        overflow: scroll;
+      }
+
+      img {
+        width: 300px;
+      }
+
+      .hidden-x {
+        overflow-x: hidden;
+      }
+
+      .hidden-y {
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab officia
+      consectetur similique, blanditiis asperiores amet velit reprehenderit
+      pariatur rerum deserunt ipsa ullam, a nesciunt inventore, consequuntur
+      fuga exercitationem facilis id!
+    </div>
+
+    <div class="hidden">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab officia
+      consectetur similique, blanditiis asperiores amet velit reprehenderit
+      pariatur rerum deserunt ipsa ullam, a nesciunt inventore, consequuntur
+      fuga exercitationem facilis id!
+    </div>
+
+    <div class="scroll">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab officia
+      consectetur similique, blanditiis asperiores amet velit reprehenderit
+      pariatur rerum deserunt ipsa ullam, a nesciunt inventore, consequuntur
+      fuga exercitationem facilis id!
+    </div>
+
+    <div class="hidden-x">
+      <img src="flower.PNG" alt="" />
+    </div>
+    <div class="hidden-y">
+      <img src="flower.PNG" alt="" />
+    </div>
+  </body>
+</html>
