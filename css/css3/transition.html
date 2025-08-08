@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 15px;
+      }
+      .box1 {
+        padding: 10px;
+        transition-property: background-color;
+        transition-duration: 2000ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+      .box1:hover {
+        background-color: blue;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        transition: all 1s;
+      }
+      h1:hover {
+        background-color: red;
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+
+    <h1>Hello World</h1>
+  </body>
+</html>

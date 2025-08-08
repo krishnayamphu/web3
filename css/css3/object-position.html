@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      img {
+        width: 240px;
+        height: 300px;
+        background-color: pink;
+        border: 2px solid red;
+        margin: 15px auto;
+        object-fit: contain;
+      }
+      .top {
+        object-position: top;
+      }
+      .bottom {
+        object-position: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../bird.PNG" alt="" />
+    <img class="top" src="../bird.PNG" alt="" />
+    <img class="bottom" src="../bird.PNG" alt="" />
+  </body>
+</html>
