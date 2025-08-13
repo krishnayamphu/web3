@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input,
+      textarea,
+      select {
+        display: block;
+        margin-bottom: 15px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="email" placeholder="email" />
+      <input type="search" placeholder="search" />
+      <input type="number" name="" id="" step="5" />
+      <input type="password" placeholder="password" />
+      <input type="checkbox" checked />checkbox 1
+      <input type="checkbox" />checkbox 2 <br />
+      <label for="">Gender</label>
+      <input type="radio" value="m" name="gender" />Male
+      <input type="radio" value="f" name="gender" />Female
+      <br />
+      <input type="range" min="0" max="100" value="25" />
+      <input type="color" />
+      <input type="file" multiple />
+      <input type="date" />
+      <input type="time" />
+      <input type="datetime-local" />
+      <input type="month" />
+      <input type="week" />
+      <input type="url" />
+      <textarea name="" id="" rows="5" placeholder="textarea"></textarea>
+
+      <select name="" id="">
+        <option value="np">Nepal</option>
+        <option value="in" selected>India</option>
+        <option value="cn">China</option>
+      </select>
+
+      <button>Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

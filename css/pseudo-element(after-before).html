@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      h1::after {
+        content: "😀";
+      }
+      h2::before {
+        content: open-quote;
+      }
+      h2::after {
+        content: close-quote;
+      }
+
+      p::before {
+        content: "Note: ";
+        font-weight: bold;
+      }
+      p::after {
+        content: "more...";
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+      }
+      li::before {
+        content: "💗 ";
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, temporibus
+      dolorum delectus molestiae iure autem nam suscipit. Incidunt, velit
+      blanditiis. Tenetur tempore et non vero cupiditate. Deleniti voluptatibus
+      itaque eveniet.
+    </p>
+
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+    </ul>
+  </body>
+</html>
