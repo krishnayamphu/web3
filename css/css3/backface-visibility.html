@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      section {
+        width: 80%;
+        margin: 30px auto;
+        border: 2px solid red;
+        perspective: 500px;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        margin: 30px;
+        display: inline-block;
+        transition: all 1s ease-in-out;
+      }
+      .box1:hover {
+        transform: rotateY(180deg);
+        backface-visibility: visible;
+      }
+      .box2:hover {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+    </section>
+  </body>
+</html>

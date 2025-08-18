@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      @keyframes changeColor {
+        0% {
+          background-color: red;
+        }
+        100% {
+          background-color: blue;
+          width: 300px;
+        }
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: changeColor;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(0%) rotate(360deg);
+        }
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+        background-color: teal;
+        animation: move 1s linear infinite;
+      }
+
+      @keyframes largeText {
+        from {
+          font-size: 1px;
+        }
+        to {
+          font-size: 48px;
+          transform: rotate(360deg);
+          color: red;
+        }
+      }
+      h1 {
+        text-align: center;
+        animation: largeText 6s infinite;
+        text-transform: uppercase;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <h1>Hello</h1>
+  </body>
+</html>

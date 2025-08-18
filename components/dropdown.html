@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .dropdown {
+        background-color: bisque;
+        margin: 15px auto;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+      .dropdown-menu {
+        background-color: rgb(203, 200, 201);
+        display: none;
+      }
+      .dropdown-menu a {
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      .dropdown-menu a:hover {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span>Dropdown</span>
+      <div class="dropdown-menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </body>
+</html>
