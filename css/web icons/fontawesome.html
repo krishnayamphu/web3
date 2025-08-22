@@ -4,223 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <style>
-      .text-primary {
-        color: rgb(24, 24, 208);
+      .row {
+        border: 2px solid red;
+        width: 90%;
+        margin: 15px auto;
+        display: flex;
       }
-      .text-success {
-        color: rgb(24, 208, 24);
+      .col {
+        background-color: green;
+      }
+      .col:nth-child(even) {
+        background-color: orange;
+      }
+      .row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      .column {
+        flex-direction: column;
       }
     </style>
   </head>
   <body>
-    <i class="fa-solid fa-house"></i>
-    <i class="fa-solid fa-camera"></i>
-    <i class="fa-solid fa-user"></i>
-    <i class="fa-solid fa-phone"></i>
-    <i class="fa-solid fa-mobile"></i>
-
-    <h2>Style icons</h2>
-    <i class="fa-solid fa-house"></i>
-    <i class="fa-solid fa-house text-primary"></i>
-    <i class="fa-solid fa-house text-success"></i>
-
-    <h2>Sizing icons</h2>
-    <i class="fa-solid fa-coffee fa-2xs"></i>
-    <i class="fa-solid fa-coffee fa-xs"></i>
-    <i class="fa-solid fa-coffee fa-sm"></i>
-    <i class="fa-solid fa-coffee"></i>
-    <i class="fa-solid fa-coffee fa-lg"></i>
-    <i class="fa-solid fa-coffee fa-xl"></i>
-    <i class="fa-solid fa-coffee fa-2xl"></i>
-
-    <hr />
-
-    <i class="fa-solid fa-camera fa-1x"></i>
-    <i class="fa-solid fa-camera fa-2x"></i>
-    <i class="fa-solid fa-camera fa-3x"></i>
-    <i class="fa-solid fa-camera fa-4x"></i>
-    <i class="fa-solid fa-camera fa-5x"></i>
-    <i class="fa-solid fa-camera fa-6x"></i>
-    <i class="fa-solid fa-camera fa-7x"></i>
-    <i class="fa-solid fa-camera fa-8x"></i>
-    <i class="fa-solid fa-camera fa-9x"></i>
-    <i class="fa-solid fa-camera fa-10x"></i>
-
-    <h2>Fixed width</h2>
-    <div>
-      <div>
-        <i class="fa-solid fa-bread-slice" style="background: LightSalmon"></i>
-        Bread
-      </div>
-      <div>
-        <i class="fa-solid fa-egg" style="background: LightSalmon"></i> Eggs
-      </div>
-      <div>
-        <i class="fa-solid fa-cow" style="background: LightSalmon"></i> Milk
-      </div>
-      <div>
-        <i class="fa-solid fa-apple-whole" style="background: LightSalmon"></i>
-        Apples
-      </div>
-      <div>
-        <i class="fa-solid fa-camera" style="background: LightSalmon"></i>
-        Broccoli
-      </div>
+    <div class="row row-reverse">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
     </div>
-
-    <h2>Icons in list</h2>
-    <ul class="fa-ul">
-      <li>
-        <span class="fa-li"><i class="fa-solid fa-check-square"></i></span>List
-        icons can
-      </li>
-      <li>
-        <span class="fa-li"><i class="fa-solid fa-check-square"></i></span>be
-        used to
-      </li>
-      <li>
-        <span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span
-        >replace bullets
-      </li>
-      <li>
-        <span class="fa-li"><i class="fa-regular fa-square"></i></span>in lists
-      </li>
-    </ul>
-
-    <h2>Rotate icons</h2>
-    <div class="fa-3x">
-      <i class="fa-solid fa-snowboarding"></i>
-      <i class="fa-solid fa-snowboarding fa-rotate-90"></i>
-      <i class="fa-solid fa-snowboarding fa-rotate-180"></i>
-      <i class="fa-solid fa-snowboarding fa-rotate-270"></i>
-      <i class="fa-solid fa-snowboarding fa-flip-horizontal"></i>
-      <i class="fa-solid fa-snowboarding fa-flip-vertical"></i>
-      <i class="fa-solid fa-snowboarding fa-flip-both"></i>
+    <div class="row column">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
     </div>
-
-    <h2>Animating icons</h2>
-    <div class="fa-3x">
-      <i class="fa-solid fa-circle-plus fa-beat"></i>
-      <i class="fa-solid fa-heart fa-beat"></i>
-      <i
-        class="fa-solid fa-heart fa-beat"
-        style="--fa-animation-duration: 0.5s"
-      ></i>
-      <i
-        class="fa-solid fa-heart fa-beat"
-        style="--fa-animation-duration: 2s"
-      ></i>
-      <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2"></i>
-    </div>
-
-    <div class="fa-3x">
-      <i class="fa-solid fa-volleyball fa-bounce"></i>
-
-      <!-- bounce with extra rebound and "squish" on landing -->
-      <i
-        class="fa-solid fa-basketball fa-bounce"
-        style="
-          --fa-bounce-land-scale-x: 1.2;
-          --fa-bounce-land-scale-y: 0.8;
-          --fa-bounce-rebound: 5px;
-        "
-      ></i>
-
-      <!-- bounce animation with no "squish" -->
-      <i
-        class="fa-solid fa-frog fa-bounce"
-        style="
-          --fa-bounce-start-scale-x: 1;
-          --fa-bounce-start-scale-y: 1;
-          --fa-bounce-jump-scale-x: 1;
-          --fa-bounce-jump-scale-y: 1;
-          --fa-bounce-land-scale-x: 1;
-          --fa-bounce-land-scale-y: 1;
-        "
-      ></i>
-
-      <!-- bounce animation with no "squish" or "rebound" -->
-      <i
-        class="fa-solid fa-envelope fa-bounce"
-        style="
-          --fa-bounce-start-scale-x: 1;
-          --fa-bounce-start-scale-y: 1;
-          --fa-bounce-jump-scale-x: 1;
-          --fa-bounce-jump-scale-y: 1;
-          --fa-bounce-land-scale-x: 1;
-          --fa-bounce-land-scale-y: 1;
-          --fa-bounce-rebound: 0;
-        "
-      ></i>
-    </div>
-
-    <div class="fa-3x">
-      <i class="fa-solid fa-bell fa-shake"></i>
-      <i class="fa-solid fa-lock fa-shake"></i>
-      <i class="fa-solid fa-stopwatch fa-shake"></i>
-      <i class="fa-solid fa-bomb fa-shake"></i>
-    </div>
-
-    <div class="fa-3x">
-      <i class="fa-solid fa-sync fa-spin"></i>
-      <i class="fa-solid fa-circle-notch fa-spin"></i>
-      <i class="fa-solid fa-cog fa-spin"></i>
-      <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
-      <i class="fa-solid fa-spinner fa-spin-pulse"></i>
-      <i class="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse"></i>
-    </div>
-
-    <h2>Stack icons</h2>
-    <span class="fa-stack fa-2x">
-      <i class="fa-solid fa-square fa-stack-2x"></i>
-      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-    </span>
-    <span class="fa-stack fa-2x">
-      <i class="fa-solid fa-circle fa-stack-2x"></i>
-      <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>
-    </span>
-    <span class="fa-stack fa-2x">
-      <i class="fa-solid fa-camera fa-stack-1x"></i>
-      <i class="fa-solid fa-ban fa-stack-2x" style="color: Tomato"></i>
-    </span>
-    <span class="fa-stack fa-2x">
-      <i class="fa-solid fa-square fa-stack-2x"></i>
-      <i class="fa-solid fa-terminal fa-stack-1x fa-inverse"></i>
-    </span>
-    <span class="fa-stack fa-4x">
-      <i class="fa-solid fa-square fa-stack-2x"></i>
-      <i class="fa-solid fa-terminal fa-stack-1x fa-inverse"></i>
-    </span>
-
-    <h2>Custom icons</h2>
-    <button>
-      <i class="fa-solid fa-paper-plane"></i>
-    </button>
-    <button>
-      <i class="fa-solid fa-user-plus"></i>
-      Add User
-    </button>
-
-    <button>
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
-
-    <button>
-      <i class="fa-brands fa-facebook"></i>
-    </button>
-    <button>
-      <i class="fa-brands fa-twitter"></i>
-    </button>
-    <button>
-      <i class="fa-brands fa-youtube"></i>
-    </button>
   </body>
 </html>

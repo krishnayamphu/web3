@@ -1,0 +1,135 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #d50108;
+}
+nav {
+  background-color: #d50108;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  transition: all 0.5s;
+}
+nav a:hover {
+  background-color: white;
+  color: #d50108;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+.col {
+  padding: 15px;
+}
+.first {
+  width: 25%;
+}
+.middle {
+  width: 50%;
+}
+.last {
+  width: 25%;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+h3 {
+  background-color: #ef898d;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+}
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.first ul {
+  list-style: none;
+}
+.first ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.first ul li img {
+  width: 50px;
+}
+.first ul li a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.first ul li a:hover {
+  border-bottom: 1px dashed #ef898d;
+}
+
+.inquiry-form {
+  background-color: beige;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.inquiry-form input,
+.inquiry-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.inquiry-form button {
+  padding: 5px;
+  background-color: #d50108;
+  border: #d50108;
+  color: white;
+  transition: all 0.5s;
+}
+.inquiry-form button:hover {
+  background-color: #6c0306;
+}
+footer {
+  background-color: black;
+  padding: 30px 0;
+  text-align: center;
+}
+footer p {
+  padding: 0;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .first {
+    width: 100%;
+    order: 2;
+  }
+  .middle {
+    width: 100%;
+    order: 1;
+  }
+  .last {
+    width: 100%;
+    order: 3;
+  }
+}

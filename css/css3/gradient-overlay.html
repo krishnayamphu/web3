@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 800px;
+        height: 300px;
+        border: 1px solid red;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 60px;
+        background-size: cover;
+      }
+
+      .box1 {
+        background-image: conic-gradient(rgba(255, 0, 0, 0.505), blue),
+          url(../flower.PNG);
+      }
+      .box2 {
+        background-image: conic-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(../flower.PNG);
+      }
+
+      .box3 {
+        background-image: repeating-linear-gradient(
+            to right,
+            rgba(6, 172, 48, 0.4),
+            rgba(255, 234, 0, 0.4) 20%
+          ),
+          url(../flower.PNG);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h1>Hello World</h1>
+    </div>
+    <div class="box2">
+      <h1>Hello World</h1>
+    </div>
+    <div class="box3">
+      <h1>Hello World</h1>
+    </div>
+  </body>
+</html>
