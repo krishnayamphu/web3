@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span class="text-success">
+              <svg
+                width="35"
+                height="32"
+                viewBox="0 0 36 33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"
+                ></path>
+              </svg>
+            </span>
+            <span class="fw-bold">Around</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Service 1</a></li>
+                  <li><a class="dropdown-item" href="#">Services 2</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Services 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <a class="btn btn-success" href="#"
+              ><i class="fa-solid fa-cart-shopping"></i> Buy now</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-6">
+              <div class="card h-100 border-0 bg-success p-5 text-white">
+                <h1>The effective solutions for your business</h1>
+                <p>
+                  We are a team that creates business strategies for B2B and B2C
+                  companies.
+                </p>
+                <div class="d-flex my-4">
+                  <a class="btn btn-light py-2 px-3" href="#"
+                    >Book a free consultation</a
+                  >
+                  <a class="btn text-white" href="#"
+                    ><i class="fa-solid fa-phone"></i> +1562 220 0459</a
+                  >
+                </div>
+
+                <div class="d-flex gap-4 py-4 mt-4">
+                  <span>
+                    <i class="fa-solid fa-check"></i> Full spectrum of services
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-check"></i> Flexible work terms
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-5">
+        <div class="container text-center my-5">
+          <h2 class="fs-1 pt-5">Our services</h2>
+          <p>
+            With the support of independent referents, you can solve many
+            challenges
+          </p>
+
+          <div class="row mb-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body p-5">
+                  <svg
+                    class="d-block mt-1 mt-sm-0 mb-4"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="text-info">
+                      <path
+                        d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                    <g class="text-primary">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h3>Market shares analysis</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus eget molestie massa. Donec egestas ex et velit
+                    egestas dignissim. Sed fringilla velit turpis.
+                  </p>
+                  <a href="#" class="btn btn-link-more">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body p-5">
+                  <svg
+                    class="d-block mt-1 mt-sm-0 mb-4"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="text-info">
+                      <path
+                        d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                    <g class="text-primary">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h3>Market shares analysis</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus eget molestie massa. Donec egestas ex et velit
+                    egestas dignissim. Sed fringilla velit turpis.
+                  </p>
+                  <a href="#" class="btn btn-link-more">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body p-5">
+                  <svg
+                    class="d-block mt-1 mt-sm-0 mb-4"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="text-info">
+                      <path
+                        d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                    <g class="text-primary">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h3>Market shares analysis</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus eget molestie massa. Donec egestas ex et velit
+                    egestas dignissim. Sed fringilla velit turpis.
+                  </p>
+                  <a href="#" class="btn btn-link-more">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body p-5">
+                  <svg
+                    class="d-block mt-1 mt-sm-0 mb-4"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="text-info">
+                      <path
+                        d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                    <g class="text-primary">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h3>Market shares analysis</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus eget molestie massa. Donec egestas ex et velit
+                    egestas dignissim. Sed fringilla velit turpis.
+                  </p>
+                  <a href="#" class="btn btn-link-more">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body p-5">
+                  <svg
+                    class="d-block mt-1 mt-sm-0 mb-4"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="text-info">
+                      <path
+                        d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                    <g class="text-primary">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h3>Market shares analysis</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus eget molestie massa. Donec egestas ex et velit
+                    egestas dignissim. Sed fringilla velit turpis.
+                  </p>
+                  <a href="#" class="btn btn-link-more">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body p-5">
+                  <svg
+                    class="d-block mt-1 mt-sm-0 mb-4"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g class="text-info">
+                      <path
+                        d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                    <g class="text-primary">
+                      <path
+                        d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z"
+                        fill="currentColor"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h3>Market shares analysis</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus eget molestie massa. Donec egestas ex et velit
+                    egestas dignissim. Sed fringilla velit turpis.
+                  </p>
+                  <a href="#" class="btn btn-link-more">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
