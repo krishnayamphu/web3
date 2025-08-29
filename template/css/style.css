@@ -6,6 +6,11 @@
   background-attachment: fixed;
 }
 
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
 #services .card {
   background-color: #f6f9fc;
   border: none;
@@ -48,4 +53,28 @@
 #services .card:hover .card-body .btn-link-more {
   border: 1px solid #ffffff !important;
   color: #ffffff !important;
+}
+
+#features {
+  background-color: #f6f9fc;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+#portfolio {
+  background-color: #121519;
+  padding: 100px 0;
+}
+.accordion,
+.accordion-item,
+.accordion-button {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 28px;
+    margin: 15px 0;
+  }
 }
