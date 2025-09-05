@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="name"
+      placeholder="Enter your name"
+      oninput="myTextFun()"
+    />
+    <label id="lblValue"></label>
+
+    <br /><br />
+    <input
+      type="range"
+      id="rangePrice"
+      min="0"
+      max="1000"
+      oninput="getPrice()"
+    />
+    <label id="lblPrice"></label>
+    <script>
+      function myTextFun() {
+        let name = document.getElementById("name").value;
+        document.getElementById("name").value = name.toUpperCase();
+        document.getElementById("lblValue").innerHTML = name.length;
+      }
+
+      function getPrice() {
+        let value = document.getElementById("rangePrice").value;
+
+        document.getElementById("lblPrice").innerHTML = value;
+      }
+    </script>
+  </body>
+</html>

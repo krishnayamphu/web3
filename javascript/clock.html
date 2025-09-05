@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+  <body>
+    <input type="text" id="clock" />
+    <script>
+      function myWatch() {
+        const datetime = new Date();
+
+        let h = datetime.getHours(); //0-23
+        if (h > 12) h = h - 12;
+        let m = datetime.getMinutes(); //0-59
+        let s = datetime.getSeconds(); //0-59
+        let ms = datetime.getMilliseconds(); //0-999
+        let time = h + " : " + m + " : " + s + " : " + ms;
+
+        document.getElementById("clock").value = time;
+      }
+
+      setInterval("myWatch()", 1);
+    </script>
+  </body>
+</html>
